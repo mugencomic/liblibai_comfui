@@ -5,3 +5,11 @@
 于https://pytorch.org/ 查看目前支持的cuda版本，目前选择2.7正式版，对应cuda12.8。与此同时安装xformers一同编译。
 在comfyui的python文件夹（LiblibAI-workspace\comfyui-deploy-win\python_embeded）下，右键“在终端中打开”。
 复制黏贴代码 python.exe -m pip install -U xformers torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+跑完代码后，打开客户端启动发现已经成功启动xformers模块
+
+2.安装triton-windows
+要用KJ工作流的wan节点，需要在虚拟环境中安装此节点
+
+
+git clone https://github.com/thu-ml/SageAttention
+python.exe -m pip install sageattention
